@@ -16,6 +16,7 @@
 	width: 100%;
 	height: 60px;
 	top: 0;
+	z-index: 50;
 }
 @media(max-width: 615px){
 	.banner{
@@ -95,4 +96,74 @@
 #block-box2 .myth .t a{
 	color: white;
 	text-decoration: none;
+}
+
+.main{
+	width: 100%;
+	background-color: #fffffb;
+}
+.main h1#textalign, h5#textalign{
+	text-align: center;
+	background: linear-gradient(160deg, #c5c5c5, #d4d4d4);
+}
+.main .re1{
+	display: grid;
+	padding: 20px;
+	margin: 15px;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 2fr);
+}
+.block-col-row{
+	margin-top: 12px;
+	width: 350px;
+	max-height: 200px;
+	min-height: 200px;
+	padding: 15px;
+	border: 3px solid #f5f5f5;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: 0.09s;
+}
+.block-col-row:hover{
+	border-radius: 15px;
+	border: none;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.10), 0 14px 28px rgba(0,0,0,0.15);
+}
+.scroll-up{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	font-size: 30px;
+}
+.scroll-up a{
+	color: black;
+}
+.block-col-row a{
+	display: inline-block;
+	float: right;
+	font-size: 20px;
+	text-decoration: none;
+	color: darkblue;
+	transition: 0.3s;
+}
+.block-col-row a:hover{
+	color: black;
+	transform: translateX(5px);
+}
+#text-description{
+	margin-top: 15px;
+	overflow: hidden;
+}
+.block-col-row #text-description{
+	display: -webkit-box;
+	-webkit-line-clamp: 3; /* сколько оставить строк */
+	-webkit-box-orient: vertical;
+}
+footer{
+	background-color: gray;
+	margin: 0;
+	padding: 15px;
+}
+footer p{
+	text-align: center;
 }
